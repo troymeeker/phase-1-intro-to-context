@@ -50,11 +50,11 @@ function wagesEarnedOnDate(employee, workDate){
 function hoursWorkedOnDate(employee, workDate){
  
     let inTime = employee.timeInEvents  
-      .filter((elmt)=> elmt.date=== workDate)
+    //   .filter((elmt)=> elmt.date=== workDate)
       .map((elmt)=>elmt.hour)
 
    let outTime = employee.timeOutEvents
-     .filter((elmt)=> elmt.date===workDate)
+    //  .filter((elmt)=> elmt.date===workDate)
      .map((elmt)=>elmt.hour)
    //given a date, find # of hours worked between Out and in
 
